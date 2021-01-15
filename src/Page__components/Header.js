@@ -24,7 +24,7 @@ export function Header(){
                     <a href="/">CONTACTS</a>
                     <div className="search__input">
                         <input type="text" placeholder="search"/>
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <button type="submit"><i className="fa fa-search"></i></button>
                     </div>
                 </div>
                 <img className='avl__logo' src={Logo} alt="avl-logo"/>
