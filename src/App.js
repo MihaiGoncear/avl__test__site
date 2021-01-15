@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { Header } from './Page__components/Header'
 import { Main } from './Page__components/Main'
 import { Footer } from './Page__components/Footer'
+import { SetFilterToLocalStorage } from './Page__components/Functions/SetFilterToLocalStorage'
+import { GetItemFromLocalStorage } from './Page__components/Functions/GetFilterFromLocalStorage'
 
 
 class App extends Component {
@@ -10,15 +12,17 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      option: 'all',
+      option: !GetItemFromLocalStorage() ? 'all' :  GetItemFromLocalStorage(),
     }
   }
 
   filterOptionToState = (e) => {
       const filter = e.target.innerHTML.toLowerCase()
-      e.target.classList.add('active')
+      
+      SetFilterToLocalStorage(filter)
 
-      this.setState({ option: filter })
+      this.setState({ option: GetItemFromLocalStorage() })
+
   }
 
   render() {

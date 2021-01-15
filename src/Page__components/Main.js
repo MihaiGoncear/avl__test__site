@@ -6,7 +6,7 @@ import { Filter } from './Components/Filter.js'
 export function Main(props){
     return (
         <main>
-            <Filter filterOptionToState={props.filterOptionToState}/>
+            <Filter filterOptionToState={props.filterOptionToState} option={props.option}/>
             <ProductList option={props.option}/>
         </main>
     )
