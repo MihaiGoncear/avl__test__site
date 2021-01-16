@@ -119,9 +119,9 @@
             flex-flow: row nowrap;
             align-items: flex-end;
             padding: 0.3% 0 0.3% 20%;
-            height: 2vh;
+            height: 3.2vh;
             width: 100%;
-            font-size: 1.5vw;
+            font-size: 1.6vw;
     
             .location__icon {
                 width: 2vw;
@@ -130,7 +130,7 @@
             }
     
             .header__text {
-                padding-right: 6%;
+                padding-right: 5%;
             }
             
             .language{
@@ -142,8 +142,8 @@
             }
     
             .cart__icon {
-                width: 1.8vw;
-                height: 1.8vw;
+                width: 3vw;
+                height: 3vw;
             }
     
         }
@@ -152,7 +152,7 @@
     
             background-color: #353535;
             width: 100%;
-            height: 1.4vh;
+            height: 1.5vh;
     
             .avl__logo {
                 position:absolute;
@@ -160,15 +160,15 @@
                 left:0;
                 top:0;
                 bottom:0;
-                right:85%;
+                right:100%;
                 margin:auto;
-                width: 12vw;
+                width: 15vw;
     
             }
     
             .nav {
                 display: flex;
-                justify-content: center;
+                justify-content: flex-end;
                 align-items: center;
                 width: 100%;
                 height: 100%;
@@ -176,27 +176,28 @@
                 .search__input{
                     display: flex;
                     flex-flow: row nowrap;
+                    margin-right: 2vw;
     
                     input {
                         width: 9vw;
-                        height: 1.5vw;
+                        height: 2vw;
                         border: none;
                         padding-left: 3%;
-                        font-size: 1.3vw;
+                        font-size: 1.7vw;
                     }
     
                     button {
                         cursor: pointer;
                         background-color: white;
-                        width: 1.5vw;
-                        height: 1.5vw;
+                        width: 2vw;
+                        height: 2vw;
                         border: none;
                         font-size: 1vw;
                     }
                 }
     
                 a {
-                    font-size: 1.7vw;
+                    font-size: 2.3vw;
                     color: rgb(202, 202, 202);
                     text-decoration: none;
                     border-color:rgb(114, 114, 114);
