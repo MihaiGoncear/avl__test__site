@@ -1,21 +1,77 @@
 @import "reset";
 @import "mixins";
 
+.header{
+
+    width: 100%;
+    position: relative;
+    
+    .header__information {
+        background-color: #E46C0A;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        width: 100%;
+
+        p {
+            color: rgb(255, 246, 221);
+        }
+    }
+
+    .navigation__bar {
+        background-color: #353535;
+        width: 100%;
+
+        .avl__logo {
+            position:absolute;
+            height: 100%;
+            left:0;
+            top:0;
+            bottom:0;
+            margin:auto;
+        }
+
+        .nav {
+            display: flex;
+            width: 100%;
+            height: 100%;
+
+            .search__input{
+                display: flex;
+                flex-flow: row nowrap;
+
+                input {
+                    border: none;
+                    padding-left: 3%;
+                }
+
+                button {
+                    cursor: pointer;
+                    background-color: white;
+                    border: none;
+                }
+            }
+
+            a {
+                color: rgb(202, 202, 202);
+                text-decoration: none;
+                border-color:rgb(114, 114, 114);
+                border-style: solid;
+                border-width: 0 0 0 1px;
+                box-shadow:-1px 0 0 0 rgb(0, 0, 0);
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+        }
+    }
+}
 
 @include isDesktop{
     .header{
-
-        width: 100%;
-        position: relative;
         
         .header__information {
-            background-color: #E46C0A;
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: flex-end;
             padding: 0 10% 0.3% 40%;
             height: 5vh;
-            width: 100%;
             font-size: 0.7vw;
     
             .location__icon {
@@ -32,10 +88,6 @@
                 padding-left: 4%;
             }
     
-            p {
-                color: rgb(255, 246, 221);
-            }
-    
             .cart__icon {
                 width: 1vw;
                 height: 1vw;
@@ -44,30 +96,18 @@
         }
     
         .navigation__bar {
-    
-            background-color: #353535;
-            width: 100%;
             height: 4vh;
             padding: 0 10% 0 40%;
     
             .avl__logo {
-                position:absolute;
-                height: 100%;
-                left:0;
-                top:0;
-                bottom:0;
                 right:50%;
-                margin:auto;
                 width: 12vw;
     
             }
     
             .nav {
-                display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                width: 100%;
-                height: 100%;
     
                 .search__input{
                     display: flex;
@@ -76,31 +116,18 @@
                     input {
                         width: 5.3vw;
                         height: 1vw;
-                        border: none;
-                        padding-left: 3%;
                         font-size: 1vw;
                     }
     
                     button {
-                        cursor: pointer;
-                        background-color: white;
                         width: 1.3vw;
                         height: 1vw;
-                        border: none;
                         font-size: 0.9vw;
                     }
                 }
     
                 a {
                     font-size: 0.7vw;
-                    color: rgb(202, 202, 202);
-                    text-decoration: none;
-                    border-color:rgb(114, 114, 114);
-                    border-style: solid;
-                    border-width: 0 0 0 1px;
-                    box-shadow:-1px 0 0 0 rgb(0, 0, 0);
-                    padding-left: 2%;
-                    padding-right: 2%;
                 }
             }
         }
@@ -109,24 +136,19 @@
 
 @include isTelephone {
     .header{
-
-        width: 100%;
-        position: relative;
         
         .header__information {
             background-color: #E46C0A;
             display: flex;
             flex-flow: row nowrap;
             align-items: flex-end;
-            padding: 0.3% 0 0.3% 20%;
-            height: 3.2vh;
+            padding: 0.3% 0 0.3% 17%;
+            height: 3vh;
             width: 100%;
             font-size: 1.6vw;
     
             .location__icon {
-                width: 2vw;
-                height: 2.4vw;
-                padding-right: 0.3vw;
+                display: none;
             }
     
             .header__text {
@@ -137,10 +159,6 @@
                 padding-left: 6%;
             }
     
-            p {
-                color: rgb(255, 246, 221);
-            }
-    
             .cart__icon {
                 width: 3vw;
                 height: 3vw;
@@ -149,29 +167,18 @@
         }
     
         .navigation__bar {
-    
-            background-color: #353535;
-            width: 100%;
+
             height: 1.5vh;
     
             .avl__logo {
-                position:absolute;
-                height: 100%;
-                left:0;
-                top:0;
-                bottom:0;
                 right:100%;
-                margin:auto;
                 width: 15vw;
     
             }
     
             .nav {
-                display: flex;
                 justify-content: flex-end;
                 align-items: center;
-                width: 100%;
-                height: 100%;
     
                 .search__input{
                     display: flex;
@@ -181,31 +188,18 @@
                     input {
                         width: 9vw;
                         height: 2vw;
-                        border: none;
-                        padding-left: 3%;
                         font-size: 1.7vw;
                     }
     
                     button {
-                        cursor: pointer;
-                        background-color: white;
                         width: 2vw;
                         height: 2vw;
-                        border: none;
                         font-size: 1vw;
                     }
                 }
     
                 a {
                     font-size: 2.3vw;
-                    color: rgb(202, 202, 202);
-                    text-decoration: none;
-                    border-color:rgb(114, 114, 114);
-                    border-style: solid;
-                    border-width: 0 0 0 1px;
-                    box-shadow:-1px 0 0 0 rgb(0, 0, 0);
-                    padding-left: 2%;
-                    padding-right: 2%;
                 }
             }
         }

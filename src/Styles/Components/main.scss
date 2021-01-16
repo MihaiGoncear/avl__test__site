@@ -3,80 +3,167 @@
 @import "mixins";
 
 
-main{
-    width: 90%;
-    margin: 1% 5%;
+@include isDesktop{
 
-    .product__list {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        
-
-        .cart__byt {
+    main{
+        width: 90%;
+        margin: 1% 5%;
+    
+        .product__list {
             display: flex;
-            flex-flow: row nowrap;
-            margin-top: 4%;
-            width: 70%;
-            justify-content: space-evenly;
-            background-color: #00783F;
-            border-radius: 3px;
-
-            p{
-                width: 50%;
-                color: white;
-                margin: 0.1vw;
-                
-            }
-            .byt {
-                border-width: 0 1px 0px 0; 
-                border-color:#1A8653;
-                border-style: solid;
-                box-shadow: 1px 0px 0 0 #00542C; 
-            }
+            flex-flow: row wrap;
+            justify-content: center;
             
-        }
-
-        .product__item{
-            width: 20%;
-            height: 30vw;
-            margin: 5% 4%;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-
-            .product__image {
-                padding: 2vw;
-                height: 13vw;
-            }
-
-            p{
-                text-align: center;
-                font-size: 1vw;
-            }
-
-            .description {
-                height: 5vw;
-                font-style: italic;
-            }
-
-            h3 {
-                padding: 6% 0;
-                font-size: 1.1vw;
-            }
-
-            .category__images{
+    
+            .cart__byt {
                 display: flex;
                 flex-flow: row nowrap;
-                justify-content: flex-end;
-                width: 100%;
-                
-                img {
-                    padding-right: 5%;
-                    width: 4.5vw;
+                margin-top: 4%;
+                width: 70%;
+                justify-content: space-evenly;
+                background-color: #00783F;
+                border-radius: 3px;
+    
+                p{
+                    width: 50%;
+                    color: white;
+                    margin: 0.1vw;
+                    
                 }
+                .byt {
+                    border-width: 0 1px 0px 0; 
+                    border-color:#1A8653;
+                    border-style: solid;
+                    box-shadow: 1px 0px 0 0 #00542C; 
+                }
+                
             }
-
+    
+            .product__item{
+                width: 20%;
+                height: 30vw;
+                margin: 5% 4%;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+    
+                .product__image {
+                    padding: 2vw;
+                    height: 13vw;
+                }
+    
+                p{
+                    text-align: center;
+                    font-size: 1vw;
+                }
+    
+                .description {
+                    height: 5vw;
+                    font-style: italic;
+                }
+    
+                h3 {
+                    padding: 6% 0;
+                    font-size: 1.1vw;
+                }
+    
+                .category__images{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: flex-end;
+                    width: 100%;
+                    
+                    img {
+                        padding-right: 5%;
+                        width: 4.5vw;
+                    }
+                }
+    
+            }
         }
     }
 }
+
+@include isTelephone{
+    
+    main{
+        width: 98%;
+        margin: 1% 1%;
+    
+        .product__list {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            
+    
+            .cart__byt {
+                display: flex;
+                flex-flow: row nowrap;
+                margin-top: 4%;
+                width: 50%;
+                justify-content: space-evenly;
+                background-color: #00783F;
+                border-radius: 3px;
+    
+                p{
+                    width: 50%;
+                    color: white;
+                    margin: 0.1vw;
+                    
+                }
+                .byt {
+                    border-width: 0 1px 0px 0; 
+                    border-color:#1A8653;
+                    border-style: solid;
+                    box-shadow: 1px 0px 0 0 #00542C; 
+                }
+                
+            }
+    
+            .product__item{
+                width: 80%;
+                height: 50vw;
+                margin: 5% 4%;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                border: 1px solid black ;
+    
+                .product__image {
+                    padding: 1vw;
+                    height: 20vw;
+                }
+    
+                p{
+                    text-align: center;
+                    font-size: 2vw;
+                }
+    
+                .description {
+                    height: 5vw;
+                    font-style: italic;
+                }
+    
+                h3 {
+                    padding: 3% 0;
+                    font-size: 3vw;
+                }
+    
+                .category__images{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: flex-end;
+                    width: 100%;
+                    
+                    img {
+                        padding-right: 2%;
+                        width: 9vw;
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
