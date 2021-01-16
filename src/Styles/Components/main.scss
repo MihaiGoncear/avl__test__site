@@ -2,7 +2,6 @@
 @import "reset";
 @import "mixins";
 
-
 @include isDesktop{
 
     main{
@@ -128,7 +127,6 @@
                 display: flex;
                 flex-flow: column nowrap;
                 align-items: center;
-                border: 1px solid black ;
     
                 .product__image {
                     padding: 1vw;
