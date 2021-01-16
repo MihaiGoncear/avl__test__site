@@ -33,8 +33,7 @@
             width: 100%;
         }
 
-        .footer__column__common{
-            width: 25%;      
+        .footer__column__common{    
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
@@ -106,6 +105,7 @@
     
             .footer__column__common{
                 font-size: 0.8vw;
+                width: 25%;  
             }
             
             .footer__third__column {
@@ -133,38 +133,39 @@
 
 @include isTelephone{
     .footer {
-        height: 30vw;
+        height: 50vw;
     
         .footer__info{
-            width: 90%;
-            height: 50%;
+            width: 96%;
+            height: 60%;
     
             h1 {
                 margin-bottom: 1vw;
-                font-size: 2vw;
+                font-size: 3vw;
             }
     
             .footer__column__common{
-                font-size: 1.3vw;
+                font-size: 1.7vw;
+                width: 30%;  
             }
             
             .footer__third__column {
                 form {
     
                     button {
-                        height: 2.3vw;
+                        height: 3vw;
                         font-size: 1vw;
                     }
     
                     input {
-                        height: 2.3vw;
+                        height: 3vw;
                         font-size: 1vw;
                     }
                 }
             }
         }
         .footer__map {
-            height: 50%;
+            height: 40%;
             p{
                 font-size: 1vw;
             }
