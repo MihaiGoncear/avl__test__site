@@ -72,6 +72,7 @@
                 .search__input{
                     display: flex;
                     flex-flow: row nowrap;
+                    font-size: 0.5vw;
     
                     input {
                         width: 5.3vw;
@@ -116,14 +117,14 @@
             display: flex;
             flex-flow: row nowrap;
             align-items: flex-end;
-            padding: 0 10% 0.3% 40%;
-            height: 1vh;
+            padding: 0 0 0.3% 20%;
+            height: 1.6vh;
             width: 100%;
-            font-size: 0.6vw;
+            font-size: 1vw;
     
             .location__icon {
-                width: 1.3vw;
-                height: 1.5vw;
+                width: 2vw;
+                height: 2.4vw;
                 padding-right: 0.3vw;
             }
     
@@ -140,8 +141,8 @@
             }
     
             .cart__icon {
-                width: 1vw;
-                height: 1vw;
+                width: 1.5vw;
+                height: 1.5vw;
             }
     
         }
@@ -150,7 +151,7 @@
     
             background-color: #353535;
             width: 100%;
-            height: 4vh;
+            height: 1vh;
             padding: 0 10% 0 40%;
     
             .avl__logo {
@@ -159,7 +160,7 @@
                 left:0;
                 top:0;
                 bottom:0;
-                right:50%;
+                right:85%;
                 margin:auto;
                 width: 12vw;
     
